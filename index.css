@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup,
+p, blockquote, figure, hr, menu, dir,
+thead, tbody, tfoot, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0 none;
+}
+
+a:focus {
+    outline: 1px dotted;
+}
+
+a,button,input,textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+html, body {
+    background: #e1e1e1;
+}
+
+.btnGropWrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #f8f8f8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    border-top: 1px solid #cccccc;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.btn {
+    border-left: 1px solid #cccccc;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.btn:last-child {
+    background-position: 30px center;
+}
+
+.btn>em {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url(iconfont-icon05.png) no-repeat;
+    background-size: 10px 10px;
+}
+
+.btn span {
+    line-height: 50px;
+}
+
+.btn ul {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0;
+    opacity: 0;
+    background: #fff;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    word-break: break-all;
+    border-radius: 7px;
+    text-align: center;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.btn ul li {
+    border-bottom: 1px solid #cccccc;
+    height: 40px;
+    line-height: 40px;
+}
+
+.btn ul li:last-child {
+    border-bottom: none;
+}
+
+.btn ul em {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #fff;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);;
+}
